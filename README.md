@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# 🌸 蜃気楼(Mirrage) - The Markdown Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Anime Header](https://giffiles.alphacoders.com/220/220341.gif)
 
-Currently, two official plugins are available:
+Welcome to **Mirrage**, a Markdown Manager . Mirrage allows you to create, manage, preview, and download your markdown files seamlessly, with dark mode support and beautiful syntax highlighting!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Features
 
-## Expanding the ESLint configuration
+- **Create & Manage Markdown Files**: Easily add, edit, and delete your markdown files.
+- **Live Preview**: Get real-time markdown previews with full support for headers, lists, code blocks, and more.
+- **Syntax Highlighting**: Experience beautiful syntax highlighting with Prism.js for code blocks.
+- **Dark Mode**: Toggle between light and dark modes to suit your preference.
+- **Download Markdown**: Download your markdown files as `.md` files for easy sharing.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Follow the steps below to get the project up and running on your local machine.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Make sure you have the following installed:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/mirrage-markdown-manager.git
+   ```
+2. Navigate to the project directory:
+    ```bash
+    cd mirrage-markdown-manager
+   ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+4. Start server:
+    ```bash
+    npm start
+    ```
+
+The app should now be running at http://localhost:3000.
+
+
+## Usage
+
+- Create a New Markdown File: Enter the title and content in the provided form and hit "Save Markdown".
+- Preview Your Markdown: See a live preview of your markdown as you type.
+- Manage Markdown Files: View all saved markdown files, delete files, or download them as .md files.
+- Dark Mode Toggle: Switch between light and dark mode with the toggle button in the header.
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can contribute:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and ensure tests are passing.
+- Submit a pull request.
